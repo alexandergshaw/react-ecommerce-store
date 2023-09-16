@@ -119,21 +119,6 @@ const NavBar = props => {
                 <GitHub className={styles.gh} />
                 <h3>gianlucajahn</h3>
             </div>
-
-            <div 
-              className={styles.cartdiv} 
-              id="3"
-              onMouseEnter={handleHover}
-              onMouseLeave={handleHover}
-              onClick={handleOpenCart}
-            >
-                <Cart 
-                  onClick={handleOpenCart} 
-                  className={styles.svg2} 
-                  style={{ fill: cartAmount ? "#90ee90" : "transparent", stroke: cartAmount ? "" : "#fff", strokeWidth: "34px" }}
-                />
-                <h3 onClick={handleOpenCart}>Cart: {cartAmount}</h3>
-            </div>
         </div>
       </motion.div>
     </>
