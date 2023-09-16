@@ -22,30 +22,6 @@ const Filters = props => {
 
     return (
         <div className={styles.filters}>
-          <h2>Filters</h2>
-
-          <div className={styles.globalFilters}>
-               <div 
-                 className={styles.filterDiv} 
-                 id="8" 
-                 onMouseEnter={handleHover} 
-                 onMouseLeave={handleHover} 
-                 onClick={handleSelect}
-               >
-                 <button 
-                   className={styles.filterBtn} 
-                   style={{ backgroundColor: (hoverState[8].hovered || currentFilter == "Wishlist") ? "#fff" : "#2d2d2d" }}
-                   aria-label="Open wishlist"
-                 >
-                     <Wishlist 
-                        style={{ fill: (hoverState[8].hovered || currentFilter == "Wishlist") ? "#000000" : "#fff" }} 
-                        className={styles.Wishlist}
-                     />
-                 </button>
-                 Wishlist
-               </div>
-          </div>
-
           <div className={styles.genreFilters}>
             <h2>Genres</h2>
 
