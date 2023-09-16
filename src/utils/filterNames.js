@@ -1,7 +1,5 @@
 const filterNames = [
     "Wishlist",
-    "Ratings",
-    "Reviews",
     "Action",
     "Strategy",
     "RPG",
