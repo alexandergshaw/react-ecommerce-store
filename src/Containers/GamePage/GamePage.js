@@ -192,8 +192,36 @@ const GamePage = props => {
                           </button>
                       </div>
                       {selectedGame ? selectedGame.inCart ? <AddedToCartBig /> : 
-                      <></> : 
-                      <></>}
+                      <button 
+                      id="21" 
+                      onMouseEnter={handleHover} 
+                      onMouseLeave={handleHover} 
+                      className={styles.addToCartButton}
+                      style={{ color: hoverState[21].hovered ? "#92f" : "#999999" }} 
+                      onClick={handleAddToCart} 
+                      aria-label="Add"
+                    >
+                      Add to cart
+                      <Add 
+                        className={styles.add} 
+                        style={{ fill: hoverState[21].hovered ? "#92f" : "#999999" }}
+                      />
+                    </button> : 
+
+                    <button 
+                      id="21" 
+                      onMouseEnter={handleHover} 
+                      onMouseLeave={handleHover} 
+                      style={{ color: hoverState[21].hovered ? "#D2042D" : "#999999" }} 
+                      onClick={handleAddToCart} 
+                      aria-label="Add"
+                    >
+                      Not available
+                      <Add 
+                        className={styles.add} 
+                        style={{ fill: hoverState[21].hovered ? "#D2042D" : "#999999" }}
+                      />
+                    </button>}
                     </div>
                   </div>
                 </section>
