@@ -48,15 +48,6 @@ const NavBar = props => {
         transition={{ y: { type: "spring" }, duration: 0.01 }}
       >
         <div className={styles.navbar_left}>
-            <div className={styles.logodiv} id="0"
-              onMouseEnter={handleHover}
-              onMouseLeave={handleHover}
-              onClick={handleHome}
-            >
-                <Logo className={styles.svg} style={{ fill: "#fff" }}/>
-                <h3>Game Store</h3>
-            </div>
-    
             <div className={styles.pathdiv} id="1"
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
