@@ -175,7 +175,7 @@ const handleSearchSubmit = (e) => {
 }
 
 const handleSelect = (e) => {
-  setCurrentFilter(filterNames[e.target.id - 8]);
+  setCurrentFilter(filterNames[e.target.id -10]);
 }
 
 const handleSelectGame = (e) => {
